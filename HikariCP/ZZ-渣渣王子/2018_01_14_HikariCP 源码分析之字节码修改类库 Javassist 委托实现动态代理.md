@@ -21,19 +21,6 @@ wechat_url:
 - [ProxyConnection](http://www.iocoder.cn/HikariCP/zhazhawangzi/byte-code/)
 - [参考资料](http://www.iocoder.cn/HikariCP/zhazhawangzi/byte-code/)
 
--------
-
-![](http://www.iocoder.cn/images/common/wechat_mp_2017_07_31.jpg)
-
-> 🙂🙂🙂关注**微信公众号：【芋道源码】**有福利：
-> 1. RocketMQ / MyCAT / Sharding-JDBC **所有**源码分析文章列表
-> 2. RocketMQ / MyCAT / Sharding-JDBC **中文注释源码 GitHub 地址**
-> 3. 您对于源码的疑问每条留言**都**将得到**认真**回复。**甚至不知道如何读源码也可以请教噢**。
-> 4. **新的**源码解析文章**实时**收到通知。**每周更新一篇左右**。
-> 5. **认真的**源码交流微信群。
-
--------
-
 # 概述
 
 很多人都会问HikariCP为什么那么快？之前的两篇文章[【追光者系列】HikariCP源码分析之FastList](http://mp.weixin.qq.com/s?__biz=MzUzNTY4NTYxMA==&mid=2247483807&idx=1&sn=e2987a302680f2b41950e3b32d7c0679&chksm=fa80f11acdf7780c467985fed0c6261c07cc3610205e2ce7f0739ad7755b4422516ada8caf3b&scene=21#wechat_redirect) 和 [【追光者系列】HikariCP源码分析之ConcurrentBag](http://mp.weixin.qq.com/s?__biz=MzUzNTY4NTYxMA==&mid=2247483799&idx=1&sn=73794ef10f6c1b529d50657a2f975598&chksm=fa80f112cdf77804a4aa3418c89400f90a32954873aa0701ebb784cc2d082be16d80ce539f1b&scene=21#wechat_redirect) 是第一第二弹，本文就是第三弹。
