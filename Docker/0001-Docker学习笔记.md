@@ -1,22 +1,11 @@
 -------
 
-![](http://www.yunai.me/images/common/wechat_mp.jpeg)
-
-> 🙂🙂🙂关注**微信公众号：【芋道源码】**有福利：
-> 1. RocketMQ / MyCAT / Sharding-JDBC **所有**源码分析文章列表  
-> 2. RocketMQ / MyCAT / Sharding-JDBC **中文注释源码 GitHub 地址**  
-> 3. 您对于源码的疑问每条留言**都**将得到**认真**回复。**甚至不知道如何读源码也可以请教噢**。  
-> 4. **新的**源码解析文章**实时**收到通知。**每周更新一篇左右**。
-
--------
-
 # 本文背景
 * 系统：macOS Sierra 10.12.1
 * Docker版本：Docker version 1.12.3, build 6b644ec
 * 《Docker —— 从入门到实践》PDF版本：6448a627f6c4a9f0ca762951f390d3f9a571d310
 * 本文记录：在学习Docker的过程以及尝试中碰到的问题。
 
--------
 -------
 
 # 《Docker —— 从入门到实践》碰到的问题：
