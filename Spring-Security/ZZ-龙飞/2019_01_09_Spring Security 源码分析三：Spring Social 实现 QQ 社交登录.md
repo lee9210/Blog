@@ -28,18 +28,6 @@ from_url: http://niocoder.com/2018/01/09/Spring-Security源码分析三-Spring-S
 
 -------
 
-![](http://www.iocoder.cn/images/common/wechat_mp_2017_07_31.jpg)
-
-> 🙂🙂🙂关注**微信公众号：【芋道源码】**有福利：
-> 1. RocketMQ / MyCAT / Sharding-JDBC **所有**源码分析文章列表
-> 2. RocketMQ / MyCAT / Sharding-JDBC **中文注释源码 GitHub 地址**
-> 3. 您对于源码的疑问每条留言**都**将得到**认真**回复。**甚至不知道如何读源码也可以请教噢**。
-> 4. **新的**源码解析文章**实时**收到通知。**每周更新一篇左右**。
-> 5. **认真的**源码交流微信群。
-
--------
-
-
 
 > 社交登录又称作社会化登录（Social Login），是指网站的用户可以使用腾讯QQ、人人网、开心网、新浪微博、搜狐微博、腾讯微博、淘宝、豆瓣、MSN、Google等社会化媒体账号登录该网站。
 

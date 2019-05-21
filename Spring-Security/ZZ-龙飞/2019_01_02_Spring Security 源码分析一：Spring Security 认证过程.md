@@ -28,16 +28,6 @@ from_url: http://niocoder.com/2018/01/02/Spring-Security源码分析一-Spring-S
 
 -------
 
-![](http://www.iocoder.cn/images/common/wechat_mp_2017_07_31.jpg)
-
-> 🙂🙂🙂关注**微信公众号：【芋道源码】**有福利：
-> 1. RocketMQ / MyCAT / Sharding-JDBC **所有**源码分析文章列表
-> 2. RocketMQ / MyCAT / Sharding-JDBC **中文注释源码 GitHub 地址**
-> 3. 您对于源码的疑问每条留言**都**将得到**认真**回复。**甚至不知道如何读源码也可以请教噢**。
-> 4. **新的**源码解析文章**实时**收到通知。**每周更新一篇左右**。
-> 5. **认真的**源码交流微信群。
-
--------
 
 > Spring Security是一个能够为基于Spring的企业应用系统提供声明式的安全访问控制解决方案的安全框架。它提供了一组可以在Spring应用上下文中配置的Bean，充分利用了Spring IoC，DI（控制反转Inversion of Control ,DI:Dependency Injection 依赖注入）和AOP（面向切面编程）功能，为应用系统提供声明式的安全访问控制功能，减少了为企业系统安全控制编写大量重复代码的工作。 
 
@@ -196,13 +186,13 @@ public Authentication authenticate(Authentication authentication)
 
 `DaoAuthenticationProvider`主要做了以下事情
 1. 对用户身份尽心加密操作；
-	```java
+```java
 	#1.可直接返回BCryptPasswordEncoder，也可以自己实现该接口使用自己的加密算法核心方法String encode(CharSequence rawPassword);和boolean matches(CharSequence rawPassword, String encodedPassword);
 private PasswordEncoder passwordEncoder;
 ```
 2. 实现了 `AbstractUserDetailsAuthenticationProvider` 两个抽象方法，
 	1. 获取用户信息的扩展点
-	```java
+```java
 protected final UserDetails retrieveUser(String username,
 			UsernamePasswordAuthenticationToken authentication)
 			throws AuthenticationException {
@@ -299,7 +289,7 @@ public Authentication authenticate(Authentication authentication)
 `AbstractUserDetailsAuthenticationProvider`主要实现了`AuthenticationProvider`的接口方法` authenticate` 并提供了相关的验证逻辑；
 1. 获取用户返回`UserDetails`
 	`AbstractUserDetailsAuthenticationProvider`定义了一个抽象的方法
-	```java
+```java
 protected abstract UserDetails retrieveUser(String username,
      UsernamePasswordAuthenticationToken authentication)
      throws AuthenticationException;
@@ -309,7 +299,7 @@ protected abstract UserDetails retrieveUser(String username,
 	2. additionalAuthenticationChecks（抽象方法，子类实现）
 	3. postAuthenticationChecks
 3. 将已通过验证的用户信息封装成 UsernamePasswordAuthenticationToken 对象并返回；该对象封装了用户的身份信息，以及相应的权限信息，相关源码如下，
-	```java
+```java
 protected Authentication createSuccessAuthentication(Object principal,
 		UsernamePasswordAuthenticationToken result = new UsernamePasswordAuthenticationToken(
 				principal, authentication.getCredentials(),
@@ -354,7 +344,7 @@ Spring 为`UserDetailsService`默认提供了一个实现类 org.springframework
 
 该实现类主要是提供基于`JDBC`对 User 进行增、删、查、改的方法
 
-```java
+````
 public class JdbcUserDetailsManager extends JdbcDaoImpl implements UserDetailsManager,
 		GroupManager {
 	// ~ Static fields/initializers
@@ -372,12 +362,13 @@ public class JdbcUserDetailsManager extends JdbcDaoImpl implements UserDetailsMa
 
 
 
-```
+````
 
 ## 5.5 InMemoryUserDetailsManager
 
 该实现类主要是提供基于`内存`对 User 进行增、删、查、改的方法
-`public class InMemoryUserDetailsManager implements UserDetailsManager {
+````
+public class InMemoryUserDetailsManager implements UserDetailsManager {
 	protected final Log logger = LogFactory.getLog(getClass());
 	#1.用MAP 存储
 	private final Map<String, MutableUserDetails> users = new HashMap<String, MutableUserDetails>();
@@ -391,7 +382,8 @@ public class JdbcUserDetailsManager extends JdbcDaoImpl implements UserDetailsMa
 		for (UserDetails user : users) {
 			createUser(user);
 		}
-	}`
+	}
+````
 
 # 6. 总结
 `UserDetailsService`接口作为桥梁，是`DaoAuthenticationProvier`与特定用户信息来源进行解耦的地方，`UserDetailsService`由`UserDetails`和`UserDetailsManage`r所构成；`UserDetails`和`UserDetailsManager`各司其责，一个是对基本用户信息进行封装，一个是对基本用户信息进行管理；

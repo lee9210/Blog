@@ -15,17 +15,6 @@ wechat_url: https://mp.weixin.qq.com/s?__biz=MzUzMTA2NTU2Ng==&mid=2247483886&idx
 
 -------
 
-![](http://www.iocoder.cn/images/common/wechat_mp_2017_07_31.jpg)
-
-> 🙂🙂🙂关注**微信公众号：【芋道源码】**有福利：
-> 1. RocketMQ / MyCAT / Sharding-JDBC **所有**源码分析文章列表
-> 2. RocketMQ / MyCAT / Sharding-JDBC **中文注释源码 GitHub 地址**
-> 3. 您对于源码的疑问每条留言**都**将得到**认真**回复。**甚至不知道如何读源码也可以请教噢**。
-> 4. **新的**源码解析文章**实时**收到通知。**每周更新一篇左右**。
-> 5. **认真的**源码交流微信群。
-
--------
-
 上一篇文章《Spring Security(一)–Architecture Overview》，我们介绍了Spring Security的基础架构，这一节我们通过Spring官方给出的一个guides例子，来了解Spring Security是如何保护我们的应用的，之后会对进行一个解读。
 
 ## 2 Spring Security Guides
@@ -226,9 +215,3 @@ public class Application {
 本篇文章没有什么干货，基本算是翻译了Spring Security Guides的内容，稍微了解Spring Security的朋友都不会对这个翻译感到陌生。考虑到受众的问题，一个入门的例子是必须得有的，方便后续对Spring Security的自定义配置进行讲解。下一节，以此guides为例，讲解这些最简化的配置背后，Spring Security都帮我们做了什么工作。
 
 本节所有的代码，可以直接在Spring的官方仓库下载得到，`git clone https://github.com/spring-guides/gs-securing-web.git`。不过，建议初学者根据文章先一步步配置，出了问题，再与demo进行对比。
-
-# 666. 彩蛋
-
-如果你对 Spring Security 感兴趣，欢迎加入我的知识一起交流。
-
-![知识星球](http://www.iocoder.cn/images/Architecture/2017_12_29/01.png)

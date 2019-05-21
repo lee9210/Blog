@@ -15,17 +15,6 @@ wechat_url: https://mp.weixin.qq.com/s?__biz=MzUzMTA2NTU2Ng==&mid=2247483933&idx
 
 -------
 
-![](http://www.iocoder.cn/images/common/wechat_mp_2017_07_31.jpg)
-
-> 🙂🙂🙂关注**微信公众号：【芋道源码】**有福利：
-> 1. RocketMQ / MyCAT / Sharding-JDBC **所有**源码分析文章列表
-> 2. RocketMQ / MyCAT / Sharding-JDBC **中文注释源码 GitHub 地址**
-> 3. 您对于源码的疑问每条留言**都**将得到**认真**回复。**甚至不知道如何读源码也可以请教噢**。
-> 4. **新的**源码解析文章**实时**收到通知。**每周更新一篇左右**。
-> 5. **认真的**源码交流微信群。
-
--------
-
 前面的部分，我们关注了Spring Security是如何完成认证工作的，但是另外一部分核心的内容：过滤器，一直没有提到，我们已经知道Spring Security使用了springSecurityFilterChain作为了安全过滤的入口，这一节主要分析一下这个过滤器链都包含了哪些关键的过滤器，并且各自的使命是什么。
 
 ## 4 过滤器详解
@@ -480,9 +469,3 @@ protected void configure(HttpSecurity http) throws Exception {
 ### 总结
 
 本篇文章在介绍过滤器时，顺便进行了一些源码的分析，目的是方便理解整个Spring Security的工作流。伴随着整个过滤器链的介绍，安全框架的轮廓应该已经浮出水面了，下面的章节，主要打算通过自定义一些需求，再次分析其他组件的源码，学习应该如何改造Spring Security，为我们所用。
-
-# 666. 彩蛋
-
-如果你对 Spring Security 感兴趣，欢迎加入我的知识一起交流。
-
-![知识星球](http://www.iocoder.cn/images/Architecture/2017_12_29/01.png)

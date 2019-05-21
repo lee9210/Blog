@@ -20,17 +20,6 @@ wechat_url: https://mp.weixin.qq.com/s?__biz=MzUzMTA2NTU2Ng==&mid=2247484039&idx
 
 -------
 
-![](http://www.iocoder.cn/images/common/wechat_mp_2017_07_31.jpg)
-
-> 🙂🙂🙂关注**微信公众号：【芋道源码】**有福利：
-> 1. RocketMQ / MyCAT / Sharding-JDBC **所有**源码分析文章列表
-> 2. RocketMQ / MyCAT / Sharding-JDBC **中文注释源码 GitHub 地址**
-> 3. 您对于源码的疑问每条留言**都**将得到**认真**回复。**甚至不知道如何读源码也可以请教噢**。
-> 4. **新的**源码解析文章**实时**收到通知。**每周更新一篇左右**。
-> 5. **认真的**源码交流微信群。
-
--------
-
 本文开始从源码的层面，讲解一些Spring Security Oauth2的认证流程。本文较长，适合在空余时间段观看。且涉及了较多的源码，非关键性代码以…代替。
 
 ## 准备工作
@@ -371,9 +360,3 @@ public OAuth2AccessToken createAccessToken(OAuth2Authentication authentication) 
 本篇总结了使用客户端模式获取Token时，spring security oauth2内部的运作流程，重点是在分析AuthenticationServer相关的类。其他模式有一定的不同，但抽象功能是固定的，只是具体的实现类会被相应地替换。阅读spring的源码，会发现它的设计中出现了非常多的抽象接口，这对我们理清楚内部工作流程产生了不小的困扰，我的方式是可以借助UML类图，先从宏观理清楚作者的设计思路，这会让我们的分析事半功倍。
 
 下一篇文章重点分析用户携带token访问受限资源时，spring security oauth2内部的工作流程。即ResourceServer相关的类。
-
-# 666. 彩蛋
-
-如果你对 Spring Security 感兴趣，欢迎加入我的知识一起交流。
-
-![知识星球](http://www.iocoder.cn/images/Architecture/2017_12_29/01.png)

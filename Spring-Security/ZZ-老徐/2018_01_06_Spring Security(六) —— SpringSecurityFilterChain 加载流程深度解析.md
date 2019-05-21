@@ -13,17 +13,6 @@ wechat_url:  https://mp.weixin.qq.com/s?__biz=MzUzMTA2NTU2Ng==&mid=2247483980&id
 
 -------
 
-![](http://www.iocoder.cn/images/common/wechat_mp_2017_07_31.jpg)
-
-> 🙂🙂🙂关注**微信公众号：【芋道源码】**有福利：
-> 1. RocketMQ / MyCAT / Sharding-JDBC **所有**源码分析文章列表
-> 2. RocketMQ / MyCAT / Sharding-JDBC **中文注释源码 GitHub 地址**
-> 3. 您对于源码的疑问每条留言**都**将得到**认真**回复。**甚至不知道如何读源码也可以请教噢**。
-> 4. **新的**源码解析文章**实时**收到通知。**每周更新一篇左右**。
-> 5. **认真的**源码交流微信群。
-
--------
-
 SpringSecurityFilterChain 作为 SpringSecurity 的核心过滤器链在整个认证授权过程中起着举足轻重的地位，每个请求到来，都会经过该过滤器链，前文[《Spring Security(四)–核心过滤器源码分析》](https://www.cnkirito.moe/spring-security-4/) 中我们分析了 SpringSecurityFilterChain 的构成，但还有很多疑问可能没有解开：
 
 1. 这个 SpringSecurityFilterChain 是怎么注册到 web 环境中的？
@@ -403,9 +392,3 @@ public final class WebSecurity extends
 ### 总结
 
 一个名称 SpringSecurityFilterChain，借助于 Spring 的 IOC 容器，完成了 DelegatingFilterProxy 到 FilterChainProxy 的连接，并借助于 FilterChainProxy 内部维护的 List 中的某一个 SecurityFilterChain 来完成最终的过滤。
-
-# 666. 彩蛋
-
-如果你对 Spring Security 感兴趣，欢迎加入我的知识一起交流。
-
-![知识星球](http://www.iocoder.cn/images/Architecture/2017_12_29/01.png)

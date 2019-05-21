@@ -15,17 +15,6 @@ wechat_url:  https://mp.weixin.qq.com/s?__biz=MzUzMTA2NTU2Ng==&mid=2247483980&id
 
 -------
 
-![](http://www.iocoder.cn/images/common/wechat_mp_2017_07_31.jpg)
-
-> 🙂🙂🙂关注**微信公众号：【芋道源码】**有福利：
-> 1. RocketMQ / MyCAT / Sharding-JDBC **所有**源码分析文章列表
-> 2. RocketMQ / MyCAT / Sharding-JDBC **中文注释源码 GitHub 地址**
-> 3. 您对于源码的疑问每条留言**都**将得到**认真**回复。**甚至不知道如何读源码也可以请教噢**。
-> 4. **新的**源码解析文章**实时**收到通知。**每周更新一篇左右**。
-> 5. **认真的**源码交流微信群。
-
--------
-
 在开始这篇文章之前，我们似乎应该思考下为什么需要搞清楚Spring Security的内部工作原理？按照第二篇文章中的配置，一个简单的表单认证不就达成了吗？更有甚者，为什么我们不自己写一个表单认证，用过滤器即可完成，大费周章引入Spring Security，看起来也并没有方便多少。对的，在引入Spring Security之前，我们得首先想到，是什么需求让我们引入了Spring Security，以及为什么是Spring Security，而不是shiro等等其他安全框架。我的理解是有如下几点：
 
 1 在前文的介绍中，Spring Security支持防止csrf攻击，session-fixation protection，支持表单认证，basic认证，rememberMe…等等一些特性，有很多是开箱即用的功能，而大多特性都可以通过配置灵活的变更，这是它的强大之处。
@@ -288,9 +277,3 @@ public class MvcConfig extends WebMvcConfigurerAdapter {
 最后祝大家国庆玩的开心~
 
 本节的代码可以在github中下载源码：<https://github.com/lexburner/spring-security-ipLogin>
-
-# 666. 彩蛋
-
-如果你对 Spring Security 感兴趣，欢迎加入我的知识一起交流。
-
-![知识星球](http://www.iocoder.cn/images/Architecture/2017_12_29/01.png)
