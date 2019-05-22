@@ -28,17 +28,6 @@ from_url: http://niocoder.com/2018/01/05/Spring-Security源码分析二-Spring-S
 
 -------
 
-![](http://www.iocoder.cn/images/common/wechat_mp_2017_07_31.jpg)
-
-> 🙂🙂🙂关注**微信公众号：【芋道源码】**有福利：
-> 1. RocketMQ / MyCAT / Sharding-JDBC **所有**源码分析文章列表
-> 2. RocketMQ / MyCAT / Sharding-JDBC **中文注释源码 GitHub 地址**
-> 3. 您对于源码的疑问每条留言**都**将得到**认真**回复。**甚至不知道如何读源码也可以请教噢**。
-> 4. **新的**源码解析文章**实时**收到通知。**每周更新一篇左右**。
-> 5. **认真的**源码交流微信群。
-
--------
-
 > Spring Security是一个能够为基于Spring的企业应用系统提供声明式的安全访问控制解决方案的安全框架。它提供了一组可以在Spring应用上下文中配置的Bean，充分利用了Spring IoC，DI（控制反转Inversion of Control ,DI:Dependency Injection 依赖注入）和AOP（面向切面编程）功能，为应用系统提供声明式的安全访问控制功能，减少了为企业系统安全控制编写大量重复代码的工作。 
 
 
